@@ -164,4 +164,21 @@ arcpy.AddGeometryAttributes_management(Parcel_TaxData__31_, "AREA", "FEET_US", "
 # Process: Make Feature Layer (2)
 arcpy.MakeFeatureLayer_management(TaxFC_Layer__3_, TaxFC_Complete_V1, "", "", "OBJECTID OBJECTID VISIBLE NONE;Shape Shape VISIBLE NONE;objectid_1 objectid_1 VISIBLE NONE;map_book map_book VISIBLE NONE;map_page map_page VISIBLE NONE;map_block map_block VISIBLE NONE;lot_num lot_num VISIBLE NONE;nc_pin nc_pin VISIBLE NONE;condo_town condo_town VISIBLE NONE;parcel_typ parcel_typ VISIBLE NONE;pid pid VISIBLE NONE;legal_from legal_from VISIBLE NONE;commonpid commonpid VISIBLE NONE;taxpid taxpid VISIBLE NONE;totalac totalac VISIBLE NONE;ownerlastn ownerlastn VISIBLE NONE;ownerfirst ownerfirst VISIBLE NONE;cownerfirs cownerfirs VISIBLE NONE;cownerlast cownerlast VISIBLE NONE;houseno houseno VISIBLE NONE;houseunit houseunit VISIBLE NONE;stdir stdir VISIBLE NONE;stname stname VISIBLE NONE;sttype sttype VISIBLE NONE;stsuffix stsuffix VISIBLE NONE;codemunici codemunici VISIBLE NONE;municipali municipali VISIBLE NONE;mailaddr1 mailaddr1 VISIBLE NONE;mailaddr2 mailaddr2 VISIBLE NONE;city city VISIBLE NONE;state state VISIBLE NONE;zipcode zipcode VISIBLE NONE;extravalue extravalue VISIBLE NONE;landvalue landvalue VISIBLE NONE;totalvalue totalvalue VISIBLE NONE;dateofsale dateofsale VISIBLE NONE;price price VISIBLE NONE;cardno cardno VISIBLE NONE;yearbuilt yearbuilt VISIBLE NONE;heatedarea heatedarea VISIBLE NONE;cdebuildin cdebuildin VISIBLE NONE;descbuildi descbuildi VISIBLE NONE;storyheigh storyheigh VISIBLE NONE;aheatingty aheatingty VISIBLE NONE;heatedfuel heatedfuel VISIBLE NONE;actype actype VISIBLE NONE;extwall extwall VISIBLE NONE;foundation foundation VISIBLE NONE;numfirepla numfirepla VISIBLE NONE;fireplaces fireplaces VISIBLE NONE;bldggrade bldggrade VISIBLE NONE;fullbaths fullbaths VISIBLE NONE;halfbaths halfbaths VISIBLE NONE;bedrooms bedrooms VISIBLE NONE;units units VISIBLE NONE;deedbook deedbook VISIBLE NONE;deedpage deedpage VISIBLE NONE;grantor grantor VISIBLE NONE;vacantorim vacantorim VISIBLE NONE;typeofdeed typeofdeed VISIBLE NONE;legalrefer legalrefer VISIBLE NONE;taxfire taxfire VISIBLE NONE;taxmun taxmun VISIBLE NONE;taxspecdis taxspecdis VISIBLE NONE;dateannexe dateannexe VISIBLE NONE;landusecod landusecod VISIBLE NONE;netbldgval netbldgval VISIBLE NONE;physicalde physicalde VISIBLE NONE;propertyus propertyus VISIBLE NONE;descproper descproper VISIBLE NONE;neighcode neighcode VISIBLE NONE;neighbourh neighbourh VISIBLE NONE;ownertype ownertype VISIBLE NONE;ownerno ownerno VISIBLE NONE;accounttyp accounttyp VISIBLE NONE;parlegalde parlegalde VISIBLE NONE;parlanduni parlanduni VISIBLE NONE;landsequen landsequen VISIBLE NONE;shape_Leng shape_Leng VISIBLE NONE;Shape_Length Shape_Length VISIBLE NONE;Shape_Area Shape_Area VISIBLE NONE;wetland wetland VISIBLE NONE;floodplain floodplain VISIBLE NONE;lightrail lightrail VISIBLE NONE;Vacant Vacant VISIBLE NONE;cemetery cemetery VISIBLE NONE;govt_inst govt_inst VISIBLE NONE;Parks Parks VISIBLE NONE;valueratio valueratio VISIBLE NONE;Exempt Exempt VISIBLE NONE;Raw_Score Raw_Score VISIBLE NONE;Dev_Class Dev_Class VISIBLE NONE;ratioscore ratioscore VISIBLE NONE;areascore areascore VISIBLE NONE;POLY_AREA POLY_AREA VISIBLE NONE")
 
+import numpy
+p0 = numpy.percentile(VARIABLE,0)
+p20 = numpy.percentile(VARIABLE,20)
+p40 = numpy.percentile(VARIABLE,40)
+p60 = numpy.percentile(VARIABLE,60)
+p80 = numpy.percentile(VARIABLE,80)
+p100 = numpy.percentile(VARIABLE,100)
+if x =< p20:
+    jklsda;lksdj = 5
+if p20 < x => p40:
+    sdafsdf = 3
+if p40 < x => p60:
+    asfdfd = 2
+if p60 < x => p80:
+    asdfsDF = 1
+if x > p80:
+    S;LADFKJSAD = 0
 
